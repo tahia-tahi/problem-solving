@@ -27,7 +27,7 @@ let largest = Math.max(allNumbers);
 return largest
 
 
-// remove dulicate
+// remove duplicate
 function removeDuplicates(arr) {
   let unique = [];
   for (let i = 0; i < arr.length; i++) {
@@ -96,3 +96,24 @@ function countVowels(str) {
 }
 
 console.log(countVowels("programming")); 
+
+
+
+
+// ping pong
+function pingPong() {
+  for (let i = 1; i <= 20; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("PingPong");
+    } else if (i % 3 === 0) {
+      console.log("Ping");
+    } else if (i % 5 === 0) {
+      console.log("Pong");
+    } else {
+      console.log(i);
+    }
+  }
+}
+
+
+pingPong();
